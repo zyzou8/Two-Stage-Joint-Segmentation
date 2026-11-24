@@ -1,0 +1,38 @@
+# outputs -- checkpoints are hundreds of MB, never commit them
+runs/
+runs_*/
+preds/
+*.pt
+*.pth
+*.npy
+*.tex
+
+# data -- micrographs and annotations are not redistributed here
+data/
+
+# figures
+*.pdf
+*.svg
+
+# python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# environments
+venv/
+.venv/
+env/
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# experiment logs
+logs/
+paper_outputs/

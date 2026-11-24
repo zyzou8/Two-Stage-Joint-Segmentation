@@ -1,0 +1,8 @@
+# Verified working set (Python 3.9.12, CUDA 11.7).
+# Lower bounds are what the code needs; the pinned comment is what was tested.
+torch>=1.13          # tested: 2.0.0+cu117
+torchvision>=0.14    # tested: 0.15.1+cu117  (EfficientNet B0/B7 ImageNet weights)
+numpy>=1.21,<2.0     # tested: 1.21.5  -- numpy 2.x breaks scipy/skimage below
+scipy>=1.7           # tested: 1.7.3   -- ndimage: geometric augmentation, grain labelling
+scikit-image>=0.19   # tested: 0.19.2  -- metrics.variation_of_information (ARE/VI)
+Pillow>=9.0          # tested: 9.3.0   -- PNG mask I/O
